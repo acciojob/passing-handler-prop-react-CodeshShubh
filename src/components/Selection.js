@@ -10,7 +10,8 @@ const Selection = ({ index, selectedColor }) => {
   return (
     <div
       className="fix-box"
-      style={{ ...boxColor, backgroundColor: boxColor.background || 'rgb(255, 153, 51)' }}
+      style={{ ...boxColor, backgroundColor: boxColor.background || 'transparent' }}
+      data-testid={`selection-${index}`} // Add data-testid attribute
       onClick={handleBoxClick}
     >
       Selection {index + 1}

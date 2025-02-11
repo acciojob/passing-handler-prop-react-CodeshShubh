@@ -7,6 +7,7 @@ const ColourSelector = ({ config, handleColorSelection }) => {
     <button
       className={classname}
       style={{ background }}
+      data-testid={config.key} // Add data-testid attribute
       onClick={() => handleColorSelection({ background })}
     >
       {label}
